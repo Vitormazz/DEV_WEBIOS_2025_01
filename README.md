@@ -4,4 +4,4 @@ Desenvolvimento web 2025 Turma N2 Primeiro semestre
 - meu objetivo terminar bem o meu curso
 - quando meu curso terminar espero conseguir um emprego
 - um emprego bom
-- esta programando bem também
+- e estar morando sozinho e com uma familia 
