@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #265081;
+      color: white;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .beneficios-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .beneficio-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      transform: scale(1.2);
+    }
+
+    button,
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    button:hover,
+    input[type="submit"]:hover {
+      background-color: #090b09;
+    }
+  </style>
+
+<body>
+    <header>
+        <h1><i>Formulario</i></h1>
+
+    </header>
+    <form action="">
+        <label for="">
+            <h2>Nome Da Empresa</h2>
+        </label>
+        <input type="text" placeholder="Insira o nome da empresa">
+        <br>
+        <br>
+        <label for="">
+            <h2>Data Que Entrou Na Empresa</h2>
+        </label>
+        <input type="date" name="data" required>
+        <br>
+        <br>
+        <label for="">
+            <h2>Quantidade de Funcionários:</h2>
+        </label>
+        <input type="number" id="qtd_funcionarios" name="qtd_funcionarios" min="1" placeholder="Ex: 50" required>
+        <br>
+        <br>
+        <label for="">
+            <h2>Salario</h2>
+            <input type="number">
+        </label>
+        <br>
+        <br>
+        <label for="">
+            <h2>Você Esta Trabalhando Na Empresa</h2>
+        </label>
+        <input type="radio" name="1">
+        <label for="">Sim</label>
+        <input type="radio" name="1">
+        <label for="">Não</label>
+        <br>
+        <br>
+        <label for="">
+            <h2>Você é PJ ou CLT</h2>
+        </label>
+        <input type="radio" name="2">
+        <label for="">PJ</label>
+        <input type="radio" name="2">
+        <label for="">CLT</label>
+
+        <br>
+        <br>
+
+        <h2>Você recebe algum benefício?</h2>
+
+        <style>
+            .beneficios-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 colunas */
+                gap: 10px;
+                max-width: 600px;
+            }
+
+            .beneficio-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        </style>
+
+        <div class="beneficios-grid">
+            <div class="beneficio-item">
+                <input type="checkbox" id="vale_refeicao" name="beneficios[]" value="Vale Refeição">
+                <label for="vale_refeicao">Vale Refeição</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="vale_alimentacao" name="beneficios[]" value="Vale Alimentação">
+                <label for="vale_alimentacao">Vale Alimentação</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="vale_transporte" name="beneficios[]" value="Vale Transporte">
+                <label for="vale_transporte">Vale Transporte</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="academias" name="beneficios[]" value="Academias">
+                <label for="academias">Academias</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="plr" name="beneficios[]" value="PLR">
+                <label for="plr">PLR</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="plano_saude" name="beneficios[]" value="Plano de Saúde">
+                <label for="plano_saude">Plano de Saúde</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="plano_odontologico" name="beneficios[]" value="Plano Odontológico">
+                <label for="plano_odontologico">Plano Odontológico</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="cesta_basica" name="beneficios[]" value="Cesta Básica">
+                <label for="cesta_basica">Cesta Básica</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="day_off" name="beneficios[]" value="Day Off">
+                <label for="day_off">Day Off</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="bolsa_estudos" name="beneficios[]" value="Bolsa de Estudos">
+                <label for="bolsa_estudos">Bolsa de Estudos</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="licenca" name="beneficios[]" value="Licença Maternidade ou Paternidade">
+                <label for="licenca">Licença Maternidade ou Paternidade</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="pet_friendly" name="beneficios[]" value="Pet Friendly">
+                <label for="pet_friendly">Pet Friendly</label>
+            </div>
+
+            <div class="beneficio-item">
+                <input type="checkbox" id="emprestimo" name="beneficios[]" value="Empréstimo Consignado">
+                <label for="emprestimo">Empréstimo Consignado</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <label for="">
+            <h2>Quais são os prós da empresa?</h2>
+        </label><br>
+        <textarea id="" name="" rows="5" cols="50"
+            placeholder="Fale sobre os pontos positivos da empresa..." required></textarea>
+        <br>
+        <br>
+        <label for="">
+            <h2>Quais são os contras da empresa?</h2>
+        </label>
+        <textarea name="" id="" rows="5" cols="50"
+            placeholder="Fale sobre os pontos negativos da empresa..."></textarea>
+        <br>
+        <br>
+        <input type="button" value="Enviar">
+    </form>
+
+
+</body>
+
+</html>
