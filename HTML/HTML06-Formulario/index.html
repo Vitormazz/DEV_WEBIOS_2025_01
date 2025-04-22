@@ -14,65 +14,107 @@
     </header>
     <!-- O atributo action serve para executar uma ação, enviar o usuario para outro site web/enviar um Email de boas  vindas para o usuario/ guarda as informaçoes preenchidas no formulario para um banco de dados ou chamar alguma ação usando o JavaScript -->
 
-    <form action="">
+    <form action="./BoasVindas.html" target="_blank">
 
         <!-- placeholder serve para colocar um texto no input e auxiliar para informar o que o usuario deve fazer no campo input -->
 
-        <label for="">Nome</label>
-        <input type="text" placeholder="Insira o nome do usuario">
-
+        <fieldset>
+            <legend>
+                <h2>Digite o seu nome:</h2>
+            </legend>
+            <label for="">Nome</label>
+            <input type="text" placeholder="Insira o nome do usuario" required>
+        </fieldset>
+        <br>
         <!-- Type radio- três opões -->
         <!-- tem colocar o nome igual no atributo type e no inputs-->
-    <br>
-        <input type="radio" name="1">
-        <label for="">São Paulo</label>
-    <br>
-        <input type="radio" name="1">
-        <label for="">Grande Sâo Paulo</label>
-        <br>
-        <input type="radio" name="1">
-        <label for="">Campinas</label>
-        <br>
-        <input type="button" value="Enviar">
 
-    <br>
-    <br>
-    <br>
-        <input type="checkbox">
-        <label for="">Funk</label>
-    <br>
-        <input type="checkbox">
-        <label for="">Pagode</label>
-    <br>
-        <input type="checkbox">
-        <label for="">Pop</label>
-    <br>
-        <input type="checkbox">
-        <label for="">Trap</label>
-    <br>
-    <input type="button" value="Enviar">
-    
-     <br>
-     <br>
-    0km<input type="range">100km
-    <br>
-    <br>
-    <!-- select -->
-    <select name="" id="">
-        <option value="Amarelo">Amarelo</option>
-        <option value="Azul">Azul</option>
-        <option value="Vermelho">Vermelho</option>
-    </select>
-    <br>
-    <br>
-    <!-- datalist -->
-    <input type="text" list="busca">
-    <datalist id="busca">
-        <option value="Santos"></option>
-        <option value="Santo André"></option>
-        <option value="São Paulo"></option>
-        <option value="Campinas"></option>
-    </datalist>
+
+        <fieldset>
+            <legend>
+                <h2>Selecione onde você mora:</h2>
+            </legend>
+            <input type="radio" name="1" required>
+            <label for="">São Paulo</label>
+            <br>
+            <input type="radio" name="1" required>
+            <label for="">Grande Sâo Paulo</label>
+            <br>
+            <input type="radio" name="1" required>
+            <label for="">Campinas</label>
+            <br>
+
+        </fieldset>
+
+        <br>
+        <br>
+        <br>
+        <fieldset>
+            <legend>
+                <h2>Escolhe seu genêro músical:</h2>
+            </legend>
+            <input type="checkbox"required>
+            <label for="">Funk</label>
+            <br>
+            <input type="checkbox">
+            <label for="">Pagode</label>
+            <br>
+            <input type="checkbox">
+            <label for="">Pop</label>
+            <br>
+            <input type="checkbox">
+            <label for="">Trap</label>
+        </fieldset>
+        <br>
+
+        <br>
+        <br>
+        <fieldset>
+            <legend>
+                <h2>Escolha a distancia:</h2>
+            </legend>
+            0km<input type="range"required>100km
+        </fieldset>
+        <br>
+        <br>
+        <!-- select -->
+        <fieldset>
+            <legend>
+                <h2>Escolha a sua cor:</h2>
+            </legend>
+            <select name="" id="">
+                <option value="Amarelo"required>Amarelo</option>
+                <option value="Azul">Azul</option>
+                <option value="Vermelho">Vermelho</option>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+        <!-- datalist -->
+        <fieldset>
+            <legend>
+                <h2>Escreva sua cidade:</h2>
+            </legend>
+            <input type="text" list="busca">
+            <datalist id="busca">
+                <option value="Santos" required></option>
+                <option value="Santo André"></option>
+                <option value="São Paulo"></option>
+                <option value="Campinas"></option>
+            </datalist>
+        </fieldset>
+
+        <br><br>
+        <!-- area para grande quantidades de texto 
+       cols > colunas
+       rows > linhas   -->
+
+        <textarea cols="30" rows="10"></textarea>
+        <br>
+
+        <input type="submit" value="Enviar">
+
+
 
 
     </form>
