@@ -1,0 +1,10 @@
+AULA-CSS
+     introdução CSS
+Estilo externo (external)
+
+
+Estilo interno (internal) (incorporado)
+
+
+Estilo na linha (inline)
+você aplica apenas na linha da tag que você escolher diretamente
