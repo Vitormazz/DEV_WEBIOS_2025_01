@@ -1,0 +1,10 @@
+#p1{
+/* largura da borda */
+border-width: 5px;
+/* cor da borda */
+border-color: rgb(53, 99, 99);
+/* estilo da borda */
+border-style: solid;
+/* espaçamento da borda */
+padding: 7px;
+}
