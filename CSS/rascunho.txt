@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <img src="./IMG/KRATOS.webp" alt="" 
+        style="width: 500px; height: 500px; float: left;">
+
+        <p style="border: 2px solid green;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+            voluptatibus beatae explicabo nisi
+            aliquam excepturi! Voluptatibus eos sed quis possimus reiciendis fuga recusandae, quisquam ex placeat
+            suscipit sapiente voluptate eligendi.</p>
+        
+        <p style="clear: both;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo esse, doloremque assumenda aspernatur quam! Aut sint nulla rem itaque assumenda, laboriosam magni quisquam esse eos. Voluptatum, obcaecati? Possimus, consectetur.</p>
+       
+    </div>
+</body>
+
+</html>

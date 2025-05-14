@@ -1,0 +1,39 @@
+.Divs {
+    border: 2px solid black;
+    clear: both;
+    height: 500px;
+    margin-bottom: 30px;
+    margin: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5px;
+}
+
+#imgSoraia {
+    height: 400px;
+    width: 300px;
+    float: left;
+    margin-right: 60px;
+}
+
+#NaruDiv {
+    height: 300px;
+    width: 400px;
+    float: right;
+}
+
+#imgKleiton {
+    height: 400px;
+    width: 400px;
+
+}
+
+#imgRed {
+    height: 400px;
+    width: 400px;
+}
+
+#Gif {
+    height: 400px;
+    width: 400px;
+}
