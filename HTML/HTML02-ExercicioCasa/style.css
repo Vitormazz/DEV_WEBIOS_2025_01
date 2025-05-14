@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background-color: #fadaeb;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+.paragrafos {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(27, 26, 26, 0.1);
+    max-width: 800px;
+    margin: 20px auto
+}
+
+.paragrafos p {
+    line-height: 1.6;
+    color: #555;
+    }
