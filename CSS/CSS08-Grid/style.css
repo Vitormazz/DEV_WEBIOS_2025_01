@@ -1,13 +1,59 @@
-.container{
-    border: 1px solid #4682B4;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50px 50px ;
+body{
+    height: 600px;
+    border: 1px solid black;
+   
 }
 
-.itens{
-    /* width: 35%;
-    height: 100%; */
-    border: 1px solid #00008B;
-    font-size:  250%;
+
+
+.container {
+    height: 600px;
+    border: 2px solid #4682B4;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+   /* quantidade de linhas e colunas */
+    grid-template-rows:  repeat(2, 70px);
+   /* espaçamento interno entre os intens */
+    padding: 20px;
+    column-gap: 50px;
+    row-gap: 20px;
+   /* alinha na horizontal */
+   /* justify-items: center; */
+  /* alinha na vertical/ strach centraliza tudo porém tem que tirar width e heigth */
+   align-items: center;
+   /* mover o conteiner na horizoltal */
+   justify-content: space-between;
+   /* mover na vertical */
+   align-content: space-evenly;
+   background-color: #f0f8ff;
+   box-shadow: 0px 10px 10px rgba(36, 34, 34, 0.589);
+}
+
+.itens {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #030374;
+    background-color: #e6f2ff;
+    font-size: 180%;
+    font-weight: bold;
+    color: #00008B;
+    /* display: flex centraliza o conteúdo dos itens. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    
+}
+
+.itens:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 139, 0.2);
+}
+
+
+h1{
+    text-align: center;
 }
