@@ -1,0 +1,240 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Barra de navegação */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Painel lateral */
+.sidebar {
+    background-color: #fff;
+    border-right: 1px solid #dee2e6;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    padding: 15px;
+}
+
+/* Componentes arrastáveis */
+.component-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: move;
+    transition: all 0.2s ease;
+}
+
+.component-item:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.component-item i {
+    margin-right: 8px;
+    color: #6c757d;
+}
+
+/* Área de edição */
+.editor-area {
+    padding: 20px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+.device-selector {
+    text-align: center;
+}
+
+.store-preview {
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    min-height: 600px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.store-preview.desktop {
+    width: 100%;
+}
+
+.store-preview.tablet {
+    width: 768px;
+}
+
+.store-preview.mobile {
+    width: 375px;
+}
+
+.drop-zone {
+    min-height: 600px;
+    padding: 15px;
+    position: relative;
+}
+
+.placeholder-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #adb5bd;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Painel de propriedades */
+.properties-panel {
+    background-color: #fff;
+    border-left: 1px solid #dee2e6;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    padding: 15px;
+}
+
+/* Componentes da loja */
+.store-component {
+    margin-bottom: 15px;
+    border: 2px solid transparent;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.store-component:hover {
+    border-color: #6c757d;
+}
+
+.store-component.selected {
+    border-color: #0d6efd;
+}
+
+.component-controls {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.store-component:hover .component-controls {
+    display: flex;
+}
+
+.component-control-btn {
+    background: none;
+    border: none;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.component-control-btn:hover {
+    color: #0d6efd;
+}
+
+/* Templates */
+.template-card {
+    border: 2px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.template-card:hover {
+    border-color: #0d6efd;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.template-card.selected {
+    border-color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Componentes específicos da loja */
+.header-component {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+}
+
+.hero-component {
+    background-color: #f8f9fa;
+    padding: 50px 15px;
+    text-align: center;
+}
+
+.product-grid-component {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+}
+
+.product-card {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.featured-component {
+    background-color: #e9ecef;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.testimonials-component {
+    background-color: #f8f9fa;
+    padding: 30px 15px;
+}
+
+.footer-component {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+/* Indicador de arrastar */
+.dragging {
+    opacity: 0.5;
+}
+
+.drop-indicator {
+    border: 2px dashed #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    color: #0d6efd;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .sidebar, .properties-panel {
+        height: auto;
+        max-height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .editor-area {
+        height: auto;
+    }
+}
+
+  
