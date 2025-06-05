@@ -1,0 +1,24 @@
+#P1{
+    /* LARGURA DA BORDA */
+    border-width: 2px;
+    /* cor da borda */
+    border-color: rgb(255, 145, 0);
+    /* estilo da borda */
+    border-style:dashed
+    /* espaçamento do textopara a borda */
+    padding 1000000px;
+}
+
+img{
+    /* LARGURA */
+    width: 300px;
+    /* ALTURA */
+    height: 200px;
+}
+
+body{
+    background-image: url("./harrypotter.jpg");
+    background-size: 100%;
+    /* fixed / scroll */
+    background-attachment: fixed;
+}

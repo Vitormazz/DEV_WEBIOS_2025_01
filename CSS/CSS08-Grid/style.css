@@ -1,0 +1,156 @@
+body{
+    height: 620px;
+    border: 1px solid black;
+   
+}
+
+
+
+.container {
+    height: 500px;
+    border: 2px solid #4682B4;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+   /* quantidade de linhas e colunas */
+    grid-template-rows:  repeat(2, 70px);
+   /* espaçamento interno entre os intens */
+    padding: 20px;
+    column-gap: 50px;
+    row-gap: 20px;
+   /* alinha na horizontal */
+   /* justify-items: center; */
+  /* alinha na vertical/ strach centraliza tudo porém tem que tirar width e heigth */
+   align-items: center;
+   /* mover o conteiner na horizoltal */
+   justify-content: space-between;
+   /* mover na vertical */
+   align-content: space-evenly;
+   background-color: #f0f8ff;
+   /* box-shadow: 0px 10px 10px rgba(36, 34, 34, 0.589); */
+   margin-bottom: 50px;
+   
+}
+
+.itens {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #030374;
+    background-color: #e6f2ff;
+    font-size: 180%;
+    font-weight: bold;
+    color: #00008B;
+    /* display: flex centraliza o conteúdo dos itens. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    
+}
+
+.itens:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 139, 0.2);
+}
+
+#item1{
+    /* grid column e referente a linhas verticais */
+    /* o grid row e referente a linhas horizontais  */
+    grid-column: 1/3;
+    grid-row: 1/3;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+/* codigo para a aula 09 GRID */
+#container2{
+    padding: 50px;
+    column-gap: 50px;
+    row-gap: 50px;
+    height: 500px;
+    display: grid;
+    /* Grid de 3X4 */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 70px);
+    
+    border: 2px solid #101011;
+    background-color: #386151;
+    font-size: 180%;
+    font-weight: bold;
+    color: #1b1b1d;
+    border-radius: 10px;
+}
+#Item01{
+    width: 70%;
+    grid-column: 1/4;
+    justify-self: center;
+ 
+    
+}
+#Item02{
+  
+    grid-column: 1/2;
+    
+}
+
+#Item03{
+  grid-column: 3/4;
+
+}
+
+#Item04{
+   grid-column: 2/4;
+   
+   
+}
+
+#Item05{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    height: 70%;
+    width: 70%;
+    /* eixo horizontal */
+    justify-self: center;
+    /* heixo vertical */
+    align-self: center;
+    /* e a junção de justify-self/aling-self */
+    place-self: center;
+}
+   
+
+#Item06{
+    grid-column: 1/3;
+   height: 70%;
+   align-self: center;
+}
+.itens2 {
+    
+    /* width: 100%;
+    height: 100%; */
+    border: 2px solid #000000;
+    background-color: #94cac3;
+    font-size: 100%;
+    font-weight: bold;
+    color: #4b4b4b;
+    
+    /* display: flex centraliza o conteúdo dos itens. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    
+}
+.itens2:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 139, 0.2);
+}
+
+
+

@@ -1,0 +1,29 @@
+/* Estilos gerais para  página */
+body {
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    background-color: #b3e9f3;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para o título <h1> */
+h1 {
+    background-color: #6590d1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 3px 3px 3px #48789f;
+}
+
+/* Estilo para a imagem */
+img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    padding: 40px
+}

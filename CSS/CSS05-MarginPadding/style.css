@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #250707;
+    color: #eedddd;
+    margin: 20px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #181717;
+    text-align: center;
+}
+
+/* Parágrafos */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Botões com efeito */
+
+button:hover {
+    background: linear-gradient(145deg, #1d1917, #696969);
+    transform: scale(1.05);
+}
+
+/* DIV1 estilizado */
+#DIV1 {
+    border: 1px solid #800000;
+    padding: 15px;
+    margin-bottom: 100px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 5px 20px 20px rgba(209, 3, 3, 0.2);
+    margin: 50px 20px 20px;
+
+
+}
+
+/* DIV2 estilizado */
+#DIV2 {
+    border: 1px solid #800000;
+    padding: 15px;
+    margin-bottom: 100px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 5px 20px 20px rgba(209, 3, 3, 0.2);
+    margin:  50px 20px 20px;
+
+    
+}
+/* Imagens com estilo */
+img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin:  0 auto;
+    border-radius: 12px;
+    box-shadow: 10px 4px 10px rgba(15, 13, 13, 0.5);
+    background-attachment: fixed;
+    background-size: 100%;
+   
+   
+}
