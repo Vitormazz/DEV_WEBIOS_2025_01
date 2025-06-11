@@ -19,16 +19,80 @@ console.clear() //limpar
  console.log(idade)
 
  // textos
-var nome1 = "Vitor Augusto"
-var nome2 = "Everton Santana"
-var nome3 = "123456789" // texto
+var nome1 = "Vitor Augusto "
+var nome2 = "Everton Santana "
+var nome3 = "123456789 " // texto
 console.log(nome1)
 console.log(nome2)
 console.log(nome3)
 
 
-VAR // Flexivel e com menos regras (Posso alterar o valor inicial de uma var e recriar a mesma e outras partes dos codigo)
+console.log("Olá" + "papai") // concatenar
+console.log("Aluno " + nome1 + "e Aluno " + nome2 + "Tem um total de " + nome3 + "dinheiros")
 
-LET // Voce não ppode recriar a mesma em outras partes do codigo com o mesmo nome, mas pode chamar e alterar o valor inicial
+//templete String
+console.log(`Aluno ${nome1} e Aluno ${nome2} Tem um total de ${nome3} dinheiros`) 
 
-CONST // Voce não pode recriar a mesma em outras partes do codigo e não pode alterar o valor inicial dela garantindo  confiança do dado que está sendo utilizado no decorrer do seu codigo  
+//operadores
+var valor1 = 5
+var valor2 = 5
+console.log(valor1 + valor2)
+console.log(valor1 - valor2)
+console.log(valor1 * valor2)
+console.log(valor1 / valor2)
+console.log(valor1 ** valor2)
+
+
+//operador relacionais 
+console.log(5 == 5)
+console.log(5 > 5)
+console.log(22 < 8)
+console.log(22 >= 22)
+console.log(22 != 23)
+console.log("Ana" == "ana")
+console.log(true == "true")
+console.log(true === "true" )
+console.log(true != "false")
+
+let temCamisa = false 
+let temCracha = true
+console.log(temCamisa)
+console.log(temCracha)
+console.log(temCamisa == true && temCracha == true) // &&  false    == true = barrado
+console.log(temCamisa == true || temCracha == true) // false == true = flexivel deixa passar
+
+
+
+
+
+//VAR // Flexivel e com menos regras (Posso alterar o valor inicial de uma var e recriar a mesma e outras partes dos codigo)
+
+//LET // Voce não ppode recriar a mesma em outras partes do codigo com o mesmo nome, mas pode chamar e alterar o valor inicial
+
+//CONST // Voce não pode recriar a mesma em outras partes do codigo e não pode alterar o valor inicial dela garantindo  confiança do dado que está sendo utilizado no decorrer do seu codigo  
+
+// Operador de atribuição
+var x = 3
+var y = 2
+x = x + y 
+// x += y formato contraido
+// x = 3 + 2 
+console.log(x)
+
+
+x = 720
+console.log(x)
+
+
+// log > para mostrar os resultados, mensagens do sistema 
+// clear > limpar o console e deixar disponivel para nova mensagens 
+
+console.clear()
+
+console.log("Tecnology")
+console.log("Filosofico")
+
+
+console.error("Não use essa tela, você pode ser punido isso")
+console.warn("Mas apresenta uma mensagem em amarelo")
+
